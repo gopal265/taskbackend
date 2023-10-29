@@ -1,11 +1,11 @@
 var mongoose = require("mongoose");
-
+// create a schema for the user because mongodb do  not have a structure 
 const userSchema = new mongoose.Schema({
 
     firstName:{
         type : String,
         require : true,
-        default : "Not Added"
+        default : "Not Added"  
     },
     lastName:{
         type: String,
@@ -26,7 +26,8 @@ const userSchema = new mongoose.Schema({
         type : Date,
     },
     mobileNumber:{
-        type : Number
+        type : Number,
+        default : 1234567890
     }
 
 })
