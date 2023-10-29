@@ -7,7 +7,7 @@ var mongoose = require("mongoose")
 app.use(express.json())  // parse the  json data
 app.use(express.urlencoded({extended:true}))  // parse the url
 const  corsOptions={
-    origin : "https://profileui.onrender.com/"
+    origin : "https://profileui.onrender.com"
 }
 app.use(cors(corsOptions));  // to allow cors origin request 
 app.use("/api/user",userRouter);  // user related routes
